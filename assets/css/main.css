@@ -90,9 +90,11 @@ main#content h2 {
 }
 
 main#content h3 {
-    font-size: 19px;
-    font-size: 1.9rem;
     margin-bottom: 15px;
+}
+
+main#content h4 {
+    margin-bottom: 10px;
 }
 
 main#content h1 + p,
@@ -324,9 +326,10 @@ div#series-note {
 
 /* styling for tables */
 main#content table, th, td {
-    border: 1px solid black; 
-    border-collapse: collapse;
-    table-layout: fixed;
+    border-spacing: 10px 5px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main#content th {
@@ -336,7 +339,7 @@ main#content th {
 }
 
 main#content td {
-    padding: 20px;
+    padding: 15px;
 }
 
 main#content tbody tr:nth-child(even) {
