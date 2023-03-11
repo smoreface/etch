@@ -8,11 +8,11 @@
     --link-hover: #154c50;
     --dark-link: #39d7e2;
     --dark-link-hover: #27959d;
-    --home-tag-box: #1a686e6c;
-    --home-tag-hover: #1a686ea9;
+    --home-tag-box: #a32fab61;
+    --home-tag-hover: #a32fab89;
     --series: #154c506c;
-    --table-light: #1a686e17;
-    --table-darker: #1a686e2e;
+    --table-light: #a32fab17;
+    --table-darker: #a32fab2e;
 }
 
 *, *:before, *:after {
