@@ -168,18 +168,20 @@ main#content ul#posts div.Tag {
 
 main#content ul#posts a.p-category {
     font-size: 0.8em;
-    background-color: var(--home-tag-box);
     color: black;
-    padding: 0.35em;
+    padding: 0.3em;
     text-decoration: none;
+    border: solid 2px var(--home-tag-box);
+    box-shadow: 2px 4px 2px -1px var(--home-tag-box);
 }
 
 main#content ul#posts a.p-category:hover {
     font-size: 0.8em;
-    background-color: var(--home-tag-hover);
     color: black;
-    padding: 0.35em;
+    padding: 0.3em;
     text-decoration: none;
+    border: solid 2px var(--home-tag-hover);
+    box-shadow: 2px 4px 2px -1px var(--home-tag-hover);
 }
 
 main#content ul#posts li a {
