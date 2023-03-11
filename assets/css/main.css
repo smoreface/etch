@@ -1,3 +1,20 @@
+:root {
+    --bkgd: #1a686e06;
+    --dark-bkgd: #35363A;
+    --text: #313a3d;
+    --dark-text: #ebebeb;
+    --nav-menu: #454545;
+    --link: #1a686e;
+    --link-hover: #154c50;
+    --dark-link: #39d7e2;
+    --dark-link-hover: #27959d;
+    --home-tag-box: #1a686e6c;
+    --home-tag-hover: #1a686ea9;
+    --series: #154c506c;
+    --table-light: #1a686e17;
+    --table-darker: #1a686e2e;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
@@ -278,12 +295,12 @@ main#content figure figcaption p {
 }
 
 main#content blockquote {
-    font-size: 17px;
+    font-size: 0.95em;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 40px;
     padding-left: 15px;
-    border-left: 3px solid #ccc;
+    border-left: 5px solid var(--link);
 }
 
 main#content code,
