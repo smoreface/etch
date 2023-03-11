@@ -1,17 +1,34 @@
+:root {
+    --bkgd: #1a686e06;
+    --dark-bkgd: #35363A;
+    --text: #313a3d;
+    --dark-text: #ebebeb;
+    --nav-menu: #454545;
+    --link: #1a686e;
+    --link-hover: #154c50;
+    --dark-link: #39d7e2;
+    --dark-link-hover: #27959d;
+    --home-tag-box: #a32fab61;
+    --home-tag-hover: #a32fab89;
+    --series: #154c506c;
+    --table-light: #a32fab17;
+    --table-darker: #a32fab2e;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
 
 html {
     font-size: 75%;
-    background-color: #1a686e06;
+    background-color: var(--bkgd);
 }
 
 body {
     font-size: 16px;
     font-size: 1.6rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #313a3d;
+    color: var(--text);
     width: 100%;
     margin: 0 auto;
     padding: 0 16px;
@@ -25,7 +42,7 @@ header#banner {
 }
 
 header#banner a {
-    color: #313a3d;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -58,18 +75,18 @@ header#banner nav ul li {
 }
 
 header#banner nav ul li a {
-    color: #454545;
+    color: var(--nav-menu);
 }
 
 /* styling for all the main content */
 main#content a {
-    color: #1a686e;
+    color: var(--link);
     text-decoration: underline;
 }
 
 main#content a:hover {
     text-decoration: underline;
-    color: #154c50;
+    color: var(--link-hover);
 }
 
 main#content h1,
@@ -107,14 +124,14 @@ main#content h6 + p {
 }
 
 main#content p {
-    color: #394548;
+    color: var(--text);
     margin: 16px 0;
 }
 
 main#content hr {
     height: 1px;
     border: 0;
-    background: #d8d8d8;
+    background: var(--bkgd);
 }
 
 main#content abbr {
@@ -138,20 +155,20 @@ main#content ul#posts li {
 /* styling for the date for posts list */
 main#content ul#posts small, span.post-date {
     font-size: 0.8em;
-    color: #555555;
+    color: var(--text);
     margin-left: 10px;
 }
 
 /* styling for the topics listed under each post, incl span */
 main#content ul#posts div.Tag {
     font-size: 0.8em;
-    color: #7f1e86;
+    color: var(--home-tag-box);
     margin-left: 8px;    
 }
 
 main#content ul#posts a.p-category {
     font-size: 0.8em;
-    background-color: #a32fab61;
+    background-color: var(--home-tag-box);
     color: black;
     padding: 0.35em;
     text-decoration: none;
@@ -159,7 +176,7 @@ main#content ul#posts a.p-category {
 
 main#content ul#posts a.p-category:hover {
     font-size: 0.8em;
-    background-color: #a32fab89;
+    background-color: var(--home-tag-hover);
     color: black;
     padding: 0.35em;
     text-decoration: none;
@@ -171,7 +188,7 @@ main#content ul#posts li a {
 }
 
 main#content ul#posts li a:hover {
-    color: #154c50;
+    color: var(--link-hover);
     text-decoration: underline;
 }
 
@@ -188,10 +205,11 @@ main#content header#post-header h1 {
     line-height: 1.15;
 }
 
+/* date on posts */
 main#content header#post-header > div {
     display: block;
     font-size: 0.85em;
-    color: #767676;
+    color: var(--text);
 }
 
 main#content #toc {
@@ -204,7 +222,7 @@ main#content #toc {
 
 main#content #toc h4 {
     font-size: 1.06em;
-    color: #3d3d3d;
+    color: var(--text);
     margin: 0;
 }
 
@@ -278,12 +296,12 @@ main#content figure figcaption p {
 }
 
 main#content blockquote {
-    font-size: 17px;
+    font-size: 0.95em;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 40px;
     padding-left: 15px;
-    border-left: 3px solid #ccc;
+    border-left: 5px solid var(--link);
 }
 
 main#content code,
@@ -334,7 +352,7 @@ main#content table, th, td {
 
 main#content th {
     padding: 20px;
-    background-color: #a32fab17;
+    background-color: var(--table-darker);
     text-align: center;
 }
 
@@ -343,17 +361,17 @@ main#content td {
 }
 
 main#content tbody tr:nth-child(even) {
-    background-color: #a32fab17;
+    background-color: var(--table-darker);
 }
   
 main#content tbody tr:nth-child(odd) {
-    background-color: #a32fab2e;
+    background-color: var(--table-light);
 }
 
 footer#footer {
     font-size: 10px;
     font-size: 1.4rem;
     font-weight: 400;
-    color: #343434;
+    color: var(--text);
     margin: 40px 0;
 }
