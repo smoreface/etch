@@ -261,6 +261,7 @@ main#content #toc ol li:before {
 
 main#content img {
     max-width: 90%;
+    height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
