@@ -336,6 +336,72 @@ main#content .footnotes {
     font-size: 0.9em;
 }
 
+
+main#content .sidenote-content {
+    text-align: left;
+	font-size: 80%;
+    position: absolute;
+    border-bottom: solid 1px var(--home-tag-box);
+    border-top: solid 1px var(--home-tag-box);
+}
+
+/* skinny boi */
+@media (max-width: 770px) {
+    main#content .sidenote-content {
+        display: none;
+        position: static;
+    }
+    main#content .sidenote {
+        &:active {
+            .sidenote-label { 
+                text-decoration: underline 2px var(--home-tag-hover);
+             }
+            .sidenote-content { 
+                border: solid 2px var(--home-tag-hover);
+                padding: 2px;
+                display: block;
+                position: static;
+                left: auto;
+                top: 10px;
+                float: left;
+                min-width: 100%;
+                background-color: white;
+             }
+        }
+    }
+}
+
+/*  regular boi  */
+@media (min-width: 770px) {
+    main#content .sidenote-content {
+        left: calc((100vw - 770px)/2 + 770px);
+        display: block;
+        margin-right: 10px;
+    }
+    main#content .sidenote {
+        &:hover {
+            .sidenote-label { 
+                text-decoration: underline 2px var(--home-tag-hover);
+
+             }
+            .sidenote-content { 
+                border-bottom: solid 2px var(--home-tag-hover);
+                border-top: solid 2px var(--home-tag-hover);
+             }
+        }
+    }
+}
+
+main#content .sidenote-checkbox {
+    display: none;
+}
+
+main#content .sidenote-label {
+    text-decoration: underline var(--home-tag-box);  
+}
+
+
+
 div#series-note {
     font-size: 17px;
     margin-top: 10px;
