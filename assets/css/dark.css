@@ -80,6 +80,10 @@ main#content th {
     background-color: #553857;
 }
 
+main#content .highlight-word {
+        text-decoration: underline 2px var(--link-hover);
+}
+
 main#content tbody tr:nth-child(even) {
     background-color: #372538;
 }
