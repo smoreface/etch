@@ -71,25 +71,47 @@ div#series-note {
     border-bottom: 3px solid #3ee4f06c;
 }
 
-/* styling for tables */
-main#content th, td {
-    border: 2px solid #8e869d; 
+main#content .sidenote-label {
+    text-decoration: underline 2px var(--dark-sidenote-label);  
 }
 
-main#content th {
-    background-color: #553857;
+main#content .sidenote-content {
+    border-bottom: solid 2px var(--dark-sidenote-label);
+    border-top: solid 2px var(--dark-sidenote-label);
 }
+
+main#content .sidenote {
+    &:hover {
+        .sidenote-label { 
+            text-decoration: underline 2px var(--dark-sidenote-active);
+
+         }
+        .sidenote-content { 
+            border-bottom: solid 2px var(--dark-sidenote-active);
+            border-top: solid 2px var(--dark-sidenote-active);
+         }
+    }
+}
+/* styling for highlight underlines */
 
 main#content .highlight-word {
-        text-decoration: underline 2px var(--link-hover);
+    text-decoration: underline 2px var(--dark-link-hover);
+    cursor: pointer;
+    text-decoration-style: wavy;
+}
+
+/* styling for tables */
+
+main#content th {
+    background-color: #243644;
 }
 
 main#content tbody tr:nth-child(even) {
-    background-color: #372538;
+    background-color: #244956;
 }
   
 main#content tbody tr:nth-child(odd) {
-    background-color: #503652;
+    background-color: #255460;
 }
 
 footer#footer {
