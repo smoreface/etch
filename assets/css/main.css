@@ -332,6 +332,25 @@ main#content pre code {
     padding: 0;
 }
 
+/* start claude css + JS of highlight target and hover */
+
+main#content 
+
+    .highlight-word {
+        cursor: pointer;
+        text-decoration: underline 2px var(--link-hover);
+        text-decoration-style: wavy;
+    }
+
+    .word-target.highlighted {
+        /* background-color:  var(--home-tag-hover); */
+        text-decoration: underline 2px var(--home-tag-hover);
+        text-decoration-style: double;
+    }
+
+/* ok another end */
+
+
 main#content .footnotes {
     font-size: 0.9em;
 }
