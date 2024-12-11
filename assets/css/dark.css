@@ -72,7 +72,7 @@ div#series-note {
 }
 
 /* styling for tables */
-main#content table, th, td {
+main#content th, td {
     border: 2px solid #8e869d; 
 }
 
