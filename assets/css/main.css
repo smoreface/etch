@@ -91,6 +91,17 @@ main#content a:hover {
     color: var(--link-hover);
 }
 
+main#content .hanchor {
+    visibility: hidden;
+    font-size: 100%;
+  }
+
+main#content  h2:hover a, 
+main#content h3:hover a, 
+main#content h4:hover a {
+    visibility: visible;
+  }
+
 main#content h1,
 main#content h2,
 main#content h3,
@@ -355,7 +366,6 @@ main#content
 main#content .footnotes {
     font-size: 0.9em;
 }
-
 
 main#content .sidenote-content {
     text-align: left;
