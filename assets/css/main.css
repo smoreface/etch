@@ -474,3 +474,24 @@ footer#footer {
     color: var(--text);
     margin: 40px 0;
 }
+
+/* webring styling */
+
+main#content a.webring {
+    color: black;
+    padding: 0.5em;
+    text-decoration: none;
+    border-style: groove;
+}
+
+main#content a.webring:hover {
+    background-color: #a32fab7c;
+    color: black;
+    box-shadow: 1px 2px 1px -0.5px
+}
+
+main#content div.webring {
+    background-color: #a32fab18;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}

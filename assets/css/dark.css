@@ -118,6 +118,20 @@ footer#footer {
     color: var(--dark-nav);
 }
 
+main#content a.webring {
+    font-size: 0.8em;
+    color: white;
+}
+
+main#content a.webring:hover {
+    background-color: #3ee4f056;
+    color: white;
+}
+main#content div.webring {
+    background-color: #3ee4f02a;
+    color: white;
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}
