@@ -118,6 +118,10 @@ footer#footer {
     color: var(--dark-nav);
 }
 
+footer#footer a{
+    color: var(--dark-link);
+}
+
 main#content a.webring {
     font-size: 0.8em;
     color: white;
