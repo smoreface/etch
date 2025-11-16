@@ -67,8 +67,8 @@ main#content header#post-header div {
 }
 
 div#series-note {
-    border-top: 3px solid #3ee4f06c;
-    border-bottom: 3px solid #3ee4f06c;
+    border-top: 3px solid var(--dark-series-border);
+    border-bottom: 3px solid var(--dark-series-border);
 }
 
 main#content .sidenote-label {
@@ -103,15 +103,20 @@ main#content .highlight-word {
 /* styling for tables */
 
 main#content th {
-    background-color: #243644;
+    background-color: var(--dark-table-th);
 }
 
 main#content tbody tr:nth-child(even) {
-    background-color: #244956;
+    background-color: var(--dark-table-darker);
 }
   
 main#content tbody tr:nth-child(odd) {
-    background-color: #255460;
+    background-color: var(--dark-table-light);
+}
+
+.callout-note {
+    border-color: var(--dark-table-light);
+    background: var(--dark-table-darker);
 }
 
 footer#footer {
