@@ -501,6 +501,72 @@ footer#footer a{
     color: var(--link);
 }
 
+/* custom cards shortcode styling */
+main#content .custom-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+main#content .custom-card {
+    border-radius: 5px;
+    border: solid 1px var(--home-tag-box);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+main#content .custom-card:hover {
+    border-color: var(--home-tag-hover);
+    box-shadow: 2px 4px 2px -1px var(--home-tag-box);
+}
+
+main#content .custom-card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: var(--text);
+}
+
+main#content .custom-card-link:hover {
+    text-decoration: none;
+    color: var(--text);
+}
+
+main#content .custom-card-image {
+    width: 100%;
+    max-width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin: 8px 0 16px 0;
+    border-radius: 4px;
+    display: block;
+}
+
+main#content .custom-card-title {
+    font-size: 1.05em;
+    margin: 0 0 8px 0;
+    color: var(--link);
+}
+
+main#content .custom-card-link:hover .custom-card-title {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+main#content .custom-card-url {
+    display: block;
+    font-size: 0.78em;
+    color: var(--text);
+    opacity: 0.75;
+    margin-bottom: 8px;
+    word-break: break-all;
+}
+
+main#content .custom-card-descr {
+    font-size: 0.9em;
+    margin: 0;
+}
+
 /* webring styling */
 
 main#content a.webring {
@@ -521,4 +587,3 @@ main#content div.webring {
     text-align: center;
     padding: 5px 0px 5px 0px;
 }
-
