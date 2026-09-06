@@ -141,6 +141,14 @@ main#content div.webring {
     color: white;
 }
 
+main#content .custom-card-title {
+    color: var(--dark-link);
+}
+
+main#content .custom-card-link:hover .custom-card-title {
+    color: var(--dark-link-hover);
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}
