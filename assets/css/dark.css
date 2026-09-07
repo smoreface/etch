@@ -149,6 +149,26 @@ main#content .custom-card-link:hover .custom-card-title {
     color: var(--dark-link-hover);
 }
 
+/* accordion shortcode styling */
+
+main#content .accordion {
+    border-color: var(--dark-table-light);
+}
+
+main#content .accordion details {
+    border-color: var(--dark-table-light);
+}
+
+main#content .accordion summary {
+    color: var(--dark-link);
+    background-color: var(--dark-table-darker);
+}
+
+main#content .accordion summary:hover {
+    background-color: var(--dark-table-th);
+    color: var(--dark-link-hover);
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}

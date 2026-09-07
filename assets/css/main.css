@@ -591,3 +591,78 @@ main#content div.webring {
     text-align: center;
     padding: 5px 0px 5px 0px;
 }
+
+/* accordion shortcode styling */
+
+main#content .accordion {
+    margin: 20px 0;
+    border-radius: 5px;
+    border: solid 1px var(--home-tag-box);
+    overflow: hidden;
+}
+
+main#content .accordion details {
+    border-bottom: solid 1px var(--home-tag-box);
+}
+
+main#content .accordion details:last-child {
+    border-bottom: none;
+}
+
+main#content .accordion summary {
+    cursor: pointer;
+    padding: 0.75em 1em;
+    font-weight: 600;
+    color: var(--link);
+    background-color: var(--table-light);
+    list-style: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+main#content .accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+main#content .accordion summary::before {
+    content: "▶";
+    display: inline-block;
+    font-size: 0.75em;
+    margin-right: 0.6em;
+    transition: transform 0.15s ease;
+}
+
+main#content .accordion details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+main#content .accordion summary:hover {
+    background-color: var(--table-darker);
+    color: var(--link-hover);
+}
+
+main#content .accordion details {
+    --accordion-spacing: 0.75em;
+}
+
+main#content .accordion details > *:not(summary) {
+    margin: 0;
+    padding: 0 1em;
+}
+
+main#content .accordion details > *:not(summary) + * {
+    margin-top: var(--accordion-spacing);
+}
+
+main#content .accordion details > *:last-child {
+    padding-bottom: 1em;
+}
+
+main#content .accordion details summary + * {
+    margin-top: var(--accordion-spacing);
+}
+
+main#content .accordion details ul,
+main#content .accordion details ol {
+    margin: 1em;
+    padding-left: 2.2em;
+}
