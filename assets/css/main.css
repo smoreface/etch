@@ -430,9 +430,17 @@ main#content .sidenote-label {
     text-decoration: underline var(--home-tag-box);  
 }
 
-/* end sidenote styling */
+/* series note styling, including contents */
 
-div#series-note {
+.notice--info a {
+    color: var(--link);
+}
+
+.notice--info a:hover {
+    color: var(--link-hover);
+}
+
+.notice--info {
     font-size: 17px;
     margin-top: 10px;
     margin-bottom: 10px;
