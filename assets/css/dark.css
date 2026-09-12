@@ -181,6 +181,37 @@ main#content .accordion summary:hover {
     color: var(--dark-link-hover);
 }
 
+
+main#content .data-source {
+    background-color: transparent;
+    border-color: var(--dark-link);
+}
+ 
+main#content .data-source summary {
+    color: var(--dark-link);
+}
+ 
+main#content .data-source:hover,
+main#content .data-source[open] {
+    background-color: var(--dark-table-light);
+}
+ 
+main#content .data-source:hover {
+    border-color: var(--dark-link-hover);
+}
+ 
+main#content .data-source summary:hover {
+    color: var(--dark-link-hover);
+}
+ 
+main#content .data-source-icon {
+    color: var(--dark-link);
+}
+ 
+main#content .data-source-detail {
+    color: var(--dark-text);
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}
