@@ -666,14 +666,15 @@ main#content .data-source summary:hover {
     color: var(--link-hover);
 }
  
-main#content .data-source-icon {
+main#content .data-source-icon, main#content .icon-inline {
     display: inline-flex;
     width: 0.95em;
     height: 0.95em;
     color: var(--link);
+    vertical-align: -0.125em;
 }
  
-main#content .data-source-icon svg {
+main#content .data-source-icon svg, main#content .icon-inline svg {
     width: 100%;
     height: 100%;
     display: block;
