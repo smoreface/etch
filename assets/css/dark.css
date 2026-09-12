@@ -127,7 +127,7 @@ main#content tbody tr:nth-child(odd) {
 }
 
 .callout-note {
-    border-color: var(--dark-table-light);
+    border-color: var(--dark-link);
     background: var(--dark-table-darker);
 }
 
