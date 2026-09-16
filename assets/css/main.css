@@ -485,14 +485,30 @@ main#content tbody tr:nth-child(odd) {
     border-inline-start: .25em solid;
 }
 
+.callout-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
 .callout-title {
     font-weight: bolder;
-    margin-bottom: 1em;
 }
 
 .callout-note {
     border-color: var(--link);
     background: var(--table-light);
+}
+
+.callout-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+}
+
+.callout-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 /* footer styling */
