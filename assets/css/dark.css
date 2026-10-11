@@ -66,10 +66,22 @@ main#content header#post-header div {
     color: #a7a7a7;
 }
 
-div#series-note {
+/* series note styling */
+
+.notice--info {
     border-top: 3px solid var(--dark-series-border);
     border-bottom: 3px solid var(--dark-series-border);
 }
+
+.notice--info a {
+    color: var(--dark-link);
+}
+
+.notice--info a:hover {
+    color: var(--dark-link-hover);
+}
+
+/* sidenote styling */
 
 main#content .sidenote-label {
     text-decoration: underline 2px var(--dark-sidenote-label);  
