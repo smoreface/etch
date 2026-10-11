@@ -115,7 +115,7 @@ main#content tbody tr:nth-child(odd) {
 }
 
 .callout-note {
-    border-color: var(--dark-table-light);
+    border-color: var(--dark-link);
     background: var(--dark-table-darker);
 }
 
@@ -147,6 +147,57 @@ main#content .custom-card-title {
 
 main#content .custom-card-link:hover .custom-card-title {
     color: var(--dark-link-hover);
+}
+
+/* accordion shortcode styling */
+
+main#content .accordion {
+    border-color: var(--dark-table-light);
+}
+
+main#content .accordion details {
+    border-color: var(--dark-table-light);
+}
+
+main#content .accordion summary {
+    color: var(--dark-link);
+    background-color: var(--dark-table-darker);
+}
+
+main#content .accordion summary:hover {
+    background-color: var(--dark-table-th);
+    color: var(--dark-link-hover);
+}
+
+
+main#content .data-source {
+    background-color: transparent;
+    border-color: var(--dark-link);
+}
+ 
+main#content .data-source summary {
+    color: var(--dark-link);
+}
+ 
+main#content .data-source:hover,
+main#content .data-source[open] {
+    background-color: var(--dark-table-light);
+}
+ 
+main#content .data-source:hover {
+    border-color: var(--dark-link-hover);
+}
+ 
+main#content .data-source summary:hover {
+    color: var(--dark-link-hover);
+}
+ 
+main#content .data-source-icon {
+    color: var(--dark-link);
+}
+ 
+main#content .data-source-detail {
+    color: var(--dark-text);
 }
 
 {{- if not (eq .Site.Params.dark "on") -}}
